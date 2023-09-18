@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';  // Import the custom CSS file here
 
-import CurrencySelector from './components/CurrencySelector'; //
+import CurrencySelector from './components/CurrencySelector'; 
 import { AppProvider } from './context/AppContext';
 import Budget from './components/Budget';
 import ExpenseTotal from './components/ExpenseTotal';
@@ -12,8 +13,8 @@ import RemainingBudget from './components/Remaining';
 const App = () => {
     return (
         <AppProvider>
-            <div className='container'>
-                <h1 className='mt-3'>Company's Budget Allocation</h1>
+            <div className='container App'>  {/* Add the custom class 'App' */}
+                <h1 className='mt-3 fun-text'>Company's Budget Allocation</h1>  {/* Add the custom class 'fun-text' */}
                 
                 {/* Include the Currency Selector here */}
                 <CurrencySelector />
