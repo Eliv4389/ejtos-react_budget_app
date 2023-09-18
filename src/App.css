@@ -1,0 +1,73 @@
+/* General layout of the App */
+.App {
+  text-align: center;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A simple logo spin effect, just for fun */
+.App-logo {
+  height: 40vmin;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+/* Header styling */
+.App-header {
+  background-color: #6200ea;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #aaa;
+  font-size: calc(10px + 2vmin);
+}
+
+/* Button Styling */
+.App-button {
+  background-color: #03dac6;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.App-button:hover {
+  background-color: #018786;
+}
+
+/* Link Styling */
+.App-link {
+  color: #bb86fc;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #3700b3;
+}
+
+/* Fun Text Styling */
+.fun-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #6200ea;
+  text-shadow: 2px 2px 4px #aaa;
+}
+
+/* Keyframe for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
