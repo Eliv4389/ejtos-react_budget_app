@@ -57,20 +57,18 @@ export const AppReducer = (state, action) => {
                 ...state,
                 budget
             };
-        case 'SET_BUDGET':
-            action.type = "DONE";
-            state.budget = action.payload;
-
+  case 'SET_BUDGET':
             return {
                 ...state,
+                budget: action.payload
             };
-        case 'CHG_CURRENCY':
-            action.type = "DONE";
-            state.currency = action.payload;
-            return {
-                ...state
-            }
 
+
+        case 'SET_CURRENCY':
+            return {
+                ...state,
+                currency: action.payload
+            };
         default:
             return state;
     }
@@ -86,7 +84,7 @@ const initialState = {
         { id: "Human Resource", name: 'Human Resource', cost: 40 },
         { id: "IT", name: 'IT', cost: 500 },
     ],
-    currency: '£'
+    currency: '$' 
 };
 
 // 2. Creates the context this is the thing our components import and use to get the state
